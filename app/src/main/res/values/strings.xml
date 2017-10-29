@@ -13,4 +13,7 @@
     <string name="ETREPASSWORD">Re</string>
     <string name="ETREPASSWORD1">Re.Password</string>
     <string name="BTNSAVE">SAVE</string>
+    <string name="bagrut">Bagrut average</string>
+    <string name="Psycchometric">Psychometric sign</string>
+    <string name="check">Check</string>
 </resources>

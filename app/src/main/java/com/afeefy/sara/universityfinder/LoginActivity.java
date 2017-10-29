@@ -41,6 +41,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             Intent intent=new Intent(this,SignUpActivity.class);
             startActivity(intent);
         }
+        if (BTNLOGIN==v)
+        {
+            Intent intent=new Intent(this,MainActivity.class);
+            startActivity(intent);
+        }
     }
     private void signIn(String email, String passw) {
         auth.signInWithEmailAndPassword(email, passw).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
@@ -48,7 +53,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(LoginActivity.this, "signIn Successful.", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, Mainlist.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
