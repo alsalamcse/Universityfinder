@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "317736072280",
+    "firebase_url": "https://universityfinder-56a9d.firebaseio.com",
+    "project_id": "universityfinder-56a9d",
+    "storage_bucket": "universityfinder-56a9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317736072280:android:805ef9317115cb58",
+        "android_client_info": {
+          "package_name": "com.afeefy.sara.universityfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317736072280-5aavhnoni91qcjpvq96j4alk4fr20jho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.afeefy.sara.universityfinder",
+            "certificate_hash": "013f43c9a5d380c46de43c04644418dbe5d2a253"
+          }
+        },
+        {
+          "client_id": "317736072280-cjk7cdk4fctbbe3a60rgil7llr03s38t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDglDB-8LrViZZiauoZVJMdI7OUhfagC6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317736072280-cjk7cdk4fctbbe3a60rgil7llr03s38t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

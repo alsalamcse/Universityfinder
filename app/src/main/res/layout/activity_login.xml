@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.afeefy.sara.universityfinder.LoginActivity">
+
+    <EditText
+        android:id="@+id/ETNAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ETNAME"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ETEMAIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ETEMAIL"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/ETPASSWORD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ETPASSWORD"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/BTNLOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BTNLOGIN" />
+
+    <Button
+        android:id="@+id/BTNSIGNUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/BTNSIGNUP" />
+
+    <Button
+        android:id="@+id/BTNFORGET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BTNFORGET" />
+
+</LinearLayout>

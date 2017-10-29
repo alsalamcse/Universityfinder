@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Universityfinder</string>
+    <string name="Name" />
+    <string name="ETNAME">Name</string>
+    <string name="ETEMAIL">Email</string>
+    <string name="ETPASSWORD">Password</string>
+    <string name="BTNLOGIN">Login</string>
+    <string name="BTNSIGNUP">Signup</string>
+    <string name="BTNFORGET">Forget my password</string>
+    <string name="BTNNAME1">Name</string>
+    <string name="BTNEMAIL1">Email</string>
+    <string name="BTNPASSWORD1">Password</string>
+    <string name="ETREPASSWORD">Re</string>
+    <string name="ETREPASSWORD1">Re.Password</string>
+    <string name="BTNSAVE">SAVE</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.afeefy.sara.universityfinder.SignUpActivity">
+
+    <EditText
+        android:id="@+id/ETNAME1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/BTNNAME1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ETEMAIL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/BTNEMAIL1"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/ETPASSWORD1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/BTNPASSWORD1"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/ETREPASSWORD1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ETREPASSWORD1"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/BTNSAVE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/BTNSAVE" />
+</LinearLayout>
