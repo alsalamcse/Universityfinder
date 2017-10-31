@@ -46,6 +46,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             Intent intent=new Intent(this,MainActivity.class);
             startActivity(intent);
         }
+        if (BTNFORGET==v)
+        {
+            Intent intent=new Intent(this,Forget.class);
+            startActivity(intent);
+        }
     }
     private void signIn(String email, String passw) {
         auth.signInWithEmailAndPassword(email, passw).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {

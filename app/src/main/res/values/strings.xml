@@ -16,4 +16,9 @@
     <string name="bagrut">Bagrut average</string>
     <string name="Psycchometric">Psychometric sign</string>
     <string name="check">Check</string>
+    <string name="check1">Check Colleges</string>
+    <string name="check2">Check Universitys</string>
+    <string name="check3">Check Universities</string>
+    <string name="email">Email</string>
+    <string name="code">Send Code</string>
 </resources>

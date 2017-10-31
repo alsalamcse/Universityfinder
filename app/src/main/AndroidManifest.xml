@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Universities" />
+        <activity android:name=".Colleges" />
+        <activity android:name=".Forget"></activity>
     </application>
 
 </manifest>
