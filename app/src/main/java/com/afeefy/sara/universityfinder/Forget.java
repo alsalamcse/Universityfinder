@@ -2,9 +2,12 @@ package com.afeefy.sara.universityfinder;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class Forget extends AppCompatActivity {
-
+    private EditText ETEMAIL;
+    private Button BTcode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

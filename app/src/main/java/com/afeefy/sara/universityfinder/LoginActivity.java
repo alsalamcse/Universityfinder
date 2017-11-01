@@ -43,8 +43,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         if (BTNLOGIN==v)
         {
-            Intent intent=new Intent(this,MainActivity.class);
-            startActivity(intent);
+            dataHandler();
         }
         if (BTNFORGET==v)
         {

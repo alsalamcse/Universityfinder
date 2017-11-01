@@ -8,12 +8,14 @@
     tools:context="com.afeefy.sara.universityfinder.Forget"
     android:weightSum="1">
 
-    <TextView
-        android:id="@+id/TVEMAIL"
+    <EditText
+        android:id="@+id/ETEMAIL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:layout_weight="0.08" />
+        android:layout_weight="0.04"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/email1" />
 
     <Button
         android:id="@+id/BTcode"
