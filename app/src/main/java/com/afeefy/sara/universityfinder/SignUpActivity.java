@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener
 {
+
     private EditText ETNAME1;
     private EditText ETEMAIL1;
     private EditText ETPASSWORD1;

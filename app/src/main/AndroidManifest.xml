@@ -17,10 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Universities" />
-        <activity android:name=".Colleges" />
-        <activity android:name=".Forget"></activity>
+        <activity android:name=".Forget" />
+        <activity android:name=".Addhouse" />
+        <activity android:name=".Houses"></activity>
     </application>
 
 </manifest>

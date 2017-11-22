@@ -22,4 +22,12 @@
     <string name="email">Email</string>
     <string name="code">Send Code</string>
     <string name="email1">Email</string>
+    <string name="title_activity_addhouse">Addhouse</string>
+    <string name="house">Number in a House</string>
+    <string name="msa7a" />
+    <string name="msa7a1">room space</string>
+    <string name="subject">SUBJECT</string>
+    <string name="studyyeard1">Study Year</string>
+    <string name="save">Save</string>
+    <string name="skip">Skip</string>
 </resources>

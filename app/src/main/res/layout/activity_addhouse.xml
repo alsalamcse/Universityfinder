@@ -5,43 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.afeefy.sara.universityfinder.MainActivity"
-    android:weightSum="1">
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.07" />
+    tools:context="com.afeefy.sara.universityfinder.Addhouse">
 
     <EditText
-        android:id="@+id/ETpsycho"
-        android:layout_width="367dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Psycchometric" />
-
-    <EditText
-        android:id="@+id/ETbagrut"
+        android:id="@+id/ETNUMHOUSE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/bagrut" />
+        android:text="@string/house" />
 
-    <Button
-        android:id="@+id/BTcheck"
+    <EditText
+        android:id="@+id/ETSUBJECT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:text="@string/check1" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/subject" />
 
-    <Button
-        android:id="@+id/BTCHECK1"
+    <EditText
+        android:id="@+id/ETYEAR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.07"
-        android:onClick="onClick"
-        android:text="@string/check3" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/studyyeard1" />
+
+    <EditText
+        android:id="@+id/ETSPACE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/msa7a1" />
+
+    <Button
+        android:id="@+id/BTNSAVE"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
 </LinearLayout>
