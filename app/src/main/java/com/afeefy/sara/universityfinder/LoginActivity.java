@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         BTNLOGIN=(Button) findViewById(R.id.BTNLOGIN);
         BTNSIGNUP=(Button) findViewById(R.id.BTNSIGNUP);
         BTNFORGET=(Button) findViewById(R.id.BTNFORGET);
+        auth=FirebaseAuth.getInstance();
     }
     @Override
     public void onClick(View v)
