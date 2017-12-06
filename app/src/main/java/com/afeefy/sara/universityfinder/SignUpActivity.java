@@ -41,8 +41,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         if (BTNSAVE==v)
         {
-            Intent intent=new Intent(this,LoginActivity.class);
-            startActivity(intent);
             dataHandler();
         }
     }

@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Addhouse extends AppCompatActivity implements View.OnClickListener{
+public class Addhouse extends AppCompatActivity  {
     private EditText ETNUMHOUSE;
     private EditText ETSUBJECT;
     private EditText ETYEAR,ETSPACE;
@@ -30,17 +30,19 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener{
         ETYEAR= (EditText) findViewById(R.id.ETYEAR);
         ETSPACE=(EditText) findViewById(R.id.ETSPACE);
         BTNSAVE=(Button) findViewById(R.id.BTNSAVE);
+        BTNSAVE.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-    }
+                dataHandler;
+
+            }
+        }) ;
+
+
 
     @Override
-    public void onClick(View v)
-    {
-        if (BTNSAVE==v)
-        {
-            Toast.makeText(getBaseContext(),"saved",Toast.LENGTH_LONG).show();
-        }
-    }
+
     public void dataHandler()
     {
         //1.get data from the fields
