@@ -30,4 +30,8 @@
     <string name="studyyeard1">Study Year</string>
     <string name="save">Save</string>
     <string name="skip">Skip</string>
+    <string name="phonenumber" />
+    <string name="phonenum">Phone number</string>
+    <string name="Address" />
+    <string name="address11">Adress</string>
 </resources>

@@ -19,30 +19,27 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Addhouse extends AppCompatActivity  {
     private EditText ETNUMHOUSE;
     private EditText ETSUBJECT;
-    private EditText ETYEAR,ETSPACE;
+    private EditText ETYEAR,ETSPACE,ETPHONENUMBER;
     private Button BTNSAVE;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addhouse);
-        ETNUMHOUSE= (EditText) findViewById(R.id.ETNUMHOUSE);
-        ETSUBJECT= (EditText) findViewById(R.id.ETSUBJECT);
-        ETYEAR= (EditText) findViewById(R.id.ETYEAR);
-        ETSPACE=(EditText) findViewById(R.id.ETSPACE);
-        BTNSAVE=(Button) findViewById(R.id.BTNSAVE);
+        ETNUMHOUSE = (EditText) findViewById(R.id.ETNUMHOUSE);
+        ETSUBJECT = (EditText) findViewById(R.id.ETSUBJECT);
+        ETYEAR = (EditText) findViewById(R.id.ETYEAR);
+        ETSPACE = (EditText) findViewById(R.id.ETSPACE);
+        ETPHONENUMBER = (EditText) findViewById(R.id.ETPHONENUMBER);
+
+        BTNSAVE = (Button) findViewById(R.id.BTNSAVE);
         BTNSAVE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                dataHandler;
-
+                dataHandler();
             }
-        }) ;
-
-
-
-    @Override
-
+        });
+    }
     public void dataHandler()
     {
         //1.get data from the fields
@@ -50,6 +47,9 @@ public class Addhouse extends AppCompatActivity  {
         String STSUBJECT=ETSUBJECT.getText().toString();
         String STYEAR=ETYEAR.getText().toString();
         String STSPACE=ETSPACE.getText().toString();
+        String STPHONENUMBER=ETPHONENUMBER.getText().toString();
+
+
         //2. todo Validate fields input
         //isok=true;......
 

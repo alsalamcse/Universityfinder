@@ -39,6 +39,22 @@
         android:inputType="textPersonName"
         android:text="@string/msa7a1" />
 
+    <EditText
+        android:id="@+id/ETPHONENUMBER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/phonenum" />
+
+    <EditText
+        android:id="@+id/ETADDRESS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/address11" />
+
     <Button
         android:id="@+id/BTNSAVE"
         android:layout_width="173dp"
