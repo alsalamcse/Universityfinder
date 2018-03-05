@@ -14,6 +14,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.afeefy.sara.universityfinder.Data.House;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 
@@ -24,6 +29,7 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
     private TextView ETYEAR, ETSPACE, ETPHONENUMBER;
     private ListView LVHOUSES;
     private HouseAdapter houseAdapter;
+    private Button BTNSAVE;
 
 
     protected void onCreate(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
@@ -37,8 +43,24 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
         ETYEAR= (TextView) findViewById(R.id.ETYEAR);
         ETSPACE= (TextView) findViewById(R.id.ETSPACE);
         ETPHONENUMBER= (TextView) findViewById(R.id.ETPHONENUMBER);
+        BTNSAVE= (Button) findViewById(BTNSAVE);
 
         houseAdapter=new HouseAdapter(R.layout.item_house);
+        LVHOUSES.setAdapter(HouseAdapter);
+        readAndListen();
+        return view;
+    }
+
+    private void readAndListen()
+    {
+        FirebaseAuth auth=FirebaseAuth.getInstance();
+        FirebaseUser user=auth.getCurrentUser();
+        String email=user.getEmail();
+        email=email.replace('.','*');
+        DatabaseReference reference;
+        reference= FirebaseDatabase.getInstance().getReference();
+        reference.child(email).child("mylist");
+
     }
 
     @Override

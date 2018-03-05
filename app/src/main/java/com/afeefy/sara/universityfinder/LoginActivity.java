@@ -53,32 +53,28 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             startActivity(intent);
         }
     }
+    private void dataHandler() {
+        String email = ETEMAIL.getText().toString();
+        String passw = ETPASSWORD.getText().toString();
+        signIn(email, passw);
+    }
+
     private void signIn(String email, String passw) {
-        auth.signInWithEmailAndPassword(email, passw).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+        auth.signInWithEmailAndPassword(email,passw).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    Toast.makeText(LoginActivity.this, "signIn Successful.", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, Houses.class);
-                    startActivity(intent);
+                    Toast.makeText(LoginActivity.this, "signIn Successful", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(getBaseContext(),Houses.class);
+                    startActivity(i);
                     finish();
                 } else {
-                    Toast.makeText(LoginActivity.this, "signIn failed." + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "signIn failed" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     task.getException().printStackTrace();
                 }
             }
         });
     }
+   
 
-    private void dataHandler() {
-        String stEmail = ETEMAIL.getText().toString();
-        String stPass = ETPASSWORD.getText().toString();
-        boolean isok = true;//to chrck if all feilds are filled correctly
-        if (stEmail.length() == 0 || stEmail.indexOf('@') < 1) {
-            ETEMAIL.setError("wrong Email");
-            isok = false;
-        }
-        signIn(stEmail, stPass);
-
-    }
 }

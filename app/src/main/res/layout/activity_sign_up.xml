@@ -8,14 +8,6 @@
     tools:context="com.afeefy.sara.universityfinder.SignUpActivity">
 
     <EditText
-        android:id="@+id/ETNAME1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/BTNNAME1"
-        android:inputType="textPersonName" />
-
-    <EditText
         android:id="@+id/ETEMAIL1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,14 +21,6 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/BTNPASSWORD1"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/ETREPASSWORD1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/ETREPASSWORD1"
         android:inputType="textPassword" />
 
     <Button
