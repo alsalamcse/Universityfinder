@@ -34,4 +34,5 @@
     <string name="phonenum">Phone number</string>
     <string name="Address" />
     <string name="address11">Adress</string>
+    <string name="title_activity_map">Map</string>
 </resources>
