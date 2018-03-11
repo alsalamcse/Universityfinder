@@ -45,11 +45,4 @@
         android:onClick="onClick"
         android:text="@string/BTNSIGNUP" />
 
-    <Button
-        android:id="@+id/BTNFORGET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:text="@string/BTNFORGET" />
-
 </LinearLayout>

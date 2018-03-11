@@ -25,7 +25,7 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
     private ImageButton IMGADD;
     private TextView ETNUMHOUSE;
     private TextView ETSUBJECT;
-    private TextView ETYEAR, ETSPACE, ETPHONENUMBER;
+    private TextView ETYEAR, ETSPACE, ETPHONENUMBER,ETADDRESS;
     private ListView LVHOUSES;
     private HouseAdapter houseAdapter;
     private Button BTNSAVE;
@@ -44,6 +44,7 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
         ETYEAR = (TextView) findViewById(R.id.ETYEAR);
         ETSPACE = (TextView) findViewById(R.id.ETSPACE);
         ETPHONENUMBER = (TextView) findViewById(R.id.ETPHONENUMBER);
+        ETADDRESS= (TextView) findViewById(R.id.ETADDRESS);
         BTNSAVE = (Button) findViewById(R.id.BTNSAVE);
         houseAdapter = new HouseAdapter(this, R.layout.item_house);
         LVHOUSES.setAdapter(houseAdapter);

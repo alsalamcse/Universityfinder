@@ -24,7 +24,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".Forget" />
         <activity android:name=".Addhouse" />
         <activity android:name=".Houses" />
         <!--

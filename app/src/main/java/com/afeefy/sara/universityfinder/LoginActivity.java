@@ -21,7 +21,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText ETPASSWORD;
     private Button BTNLOGIN;
     private Button BTNSIGNUP;
-    private Button BTNFORGET;
     private FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         ETPASSWORD=(EditText) findViewById(R.id.ETPASSWORD);
         BTNLOGIN=(Button) findViewById(R.id.BTNLOGIN);
         BTNSIGNUP=(Button) findViewById(R.id.BTNSIGNUP);
-        BTNFORGET=(Button) findViewById(R.id.BTNFORGET);
         auth=FirebaseAuth.getInstance();
     }
     @Override
@@ -46,11 +44,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (BTNLOGIN==v)
         {
             dataHandler();
-        }
-        if (BTNFORGET==v)
-        {
-            Intent intent=new Intent(this,Forget.class);
-            startActivity(intent);
         }
     }
     private void dataHandler() {
