@@ -72,6 +72,7 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
             }
             @Override
             public void onCancelled(DatabaseError databaseError)
+
             {
             }
         });
