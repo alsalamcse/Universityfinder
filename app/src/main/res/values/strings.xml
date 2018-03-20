@@ -35,4 +35,6 @@
     <string name="Address" />
     <string name="address11">Adress</string>
     <string name="title_activity_map">Map</string>
+    <string name="year">Year Subject</string>
+    <string name="phone">Phone Number</string>
 </resources>

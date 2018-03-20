@@ -17,7 +17,7 @@
     <ListView
         android:id="@+id/LVHOUSES"
         android:layout_width="match_parent"
-        android:layout_height="277dp"
+        android:layout_height="match_parent"
         android:layout_weight="0.02" />
 
 </LinearLayout>

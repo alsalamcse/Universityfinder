@@ -32,26 +32,27 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
     private FirebaseAuth auth;
     private FirebaseUser firebaseUser;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
 
-    protected void onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.activity_houses, container, false);
-        setContentView(R.layout.activity_houses);
-        IMGADD = (ImageButton) findViewById(R.id.IMGADD);
-        LVHOUSES = (ListView) findViewById(R.id.LVHOUSES);
-        ETNUMHOUSE = (TextView) findViewById(R.id.ETNUMHOUSE);
-        ETSUBJECT = (TextView) findViewById(R.id.ETSUBJECT);
-        ETYEAR = (TextView) findViewById(R.id.ETYEAR);
-        ETSPACE = (TextView) findViewById(R.id.ETSPACE);
-        ETPHONENUMBER = (TextView) findViewById(R.id.ETPHONENUMBER);
-        ETADDRESS= (TextView) findViewById(R.id.ETADDRESS);
-        BTNSAVE = (Button) findViewById(R.id.BTNSAVE);
-        houseAdapter = new HouseAdapter(this, R.layout.item_house);
-        LVHOUSES.setAdapter(houseAdapter);
-        auth = FirebaseAuth.getInstance();
-        firebaseUser = auth.getCurrentUser();
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_houses);
+            IMGADD = (ImageButton) findViewById(R.id.IMGADD);
+            LVHOUSES = (ListView) findViewById(R.id.LVHOUSES);
+            ETNUMHOUSE = (TextView) findViewById(R.id.ETNUMHOUSE);
+            ETSUBJECT = (TextView) findViewById(R.id.ETSUBJECT);
+            ETYEAR = (TextView) findViewById(R.id.ETYEAR);
+            ETSPACE = (TextView) findViewById(R.id.ETSPACE);
+            ETPHONENUMBER = (TextView) findViewById(R.id.ETPHONENUMBER);
+            ETADDRESS= (TextView) findViewById(R.id.ETADDRESS);
+            BTNSAVE = (Button) findViewById(R.id.BTNSAVE);
+            houseAdapter = new HouseAdapter(this, R.layout.item_house);
+            LVHOUSES.setAdapter(houseAdapter);
+            auth = FirebaseAuth.getInstance();
+            firebaseUser = auth.getCurrentUser();
+            readAndListen();
 
-        readAndListen();
     }
     private void readAndListen() {
         FirebaseAuth auth = FirebaseAuth.getInstance();
@@ -86,7 +87,6 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
             startActivity(i);
         }
     }
-
 }
 
 

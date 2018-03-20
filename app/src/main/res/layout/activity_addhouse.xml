@@ -12,48 +12,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/house" />
+        android:hint="@string/house"
+        android:inputType="textPersonName|numberDecimal" />
 
     <EditText
         android:id="@+id/ETSUBJECT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/subject" />
+        android:hint="@string/subject"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ETYEAR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/studyyeard1" />
+        android:hint="@string/year"
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/ETSPACE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/msa7a1" />
+        android:hint="@string/msa7a1"
+        android:inputType="textPersonName|numberDecimal" />
 
     <EditText
         android:id="@+id/ETPHONENUMBER"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/phonenum" />
+        android:hint="@string/phone"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ETADDRESS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/address11" />
+        android:hint="@string/address11"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/BTNSAVE"
