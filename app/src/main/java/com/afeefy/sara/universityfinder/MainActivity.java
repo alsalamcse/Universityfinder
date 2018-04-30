@@ -150,29 +150,26 @@ public class MainActivity extends AppCompatActivity {
                 if (myhousesFragment==null)
                 myhousesFragment=new MyhousesFragment();
                 return myhousesFragment;
-            }
+            }else
             if (position==1)
             {
                 if (searchbyadressFragment==null)
                     searchbyadressFragment=new SearchbyadressFragment();
                 return searchbyadressFragment;
-            }
+            }else
             if (position==2)
             {
                 if (searchbycityFragment==null)
                     searchbycityFragment=new SearchbycityFragment();
                 return searchbycityFragment;
-            }
+            }else
             if (position==3)
             {
                 if (searchbysubjectFragment==null)
                     searchbysubjectFragment=new SearchbysubjectFragment();
                 return searchbysubjectFragment;
             }
-
-
-
-
+            else
             return null;
 
         }
@@ -180,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 4;
+            return 3;
         }
 
         @Override
