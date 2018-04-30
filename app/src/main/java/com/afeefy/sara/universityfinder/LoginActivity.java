@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         auth=FirebaseAuth.getInstance();
         if (auth.getCurrentUser()!= null&&auth.getCurrentUser().getEmail()!=null)
         {
-            Intent i = new Intent(getBaseContext(),Houses.class);
+            Intent i = new Intent(getBaseContext(),MainActivity.class);
             startActivity(i);
             finish();
         }
@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(LoginActivity.this, "signIn Successful", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getBaseContext(),Houses.class);
+                    Intent i = new Intent(getBaseContext(),MainActivity.class);
                     startActivity(i);
                     finish();
                 }

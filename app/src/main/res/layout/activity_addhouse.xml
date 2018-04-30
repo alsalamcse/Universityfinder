@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.afeefy.sara.universityfinder.Addhouse">
+    tools:context="com.afeefy.sara.universityfinder.Addhouse"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/ETNUMHOUSE"
@@ -54,6 +54,35 @@
         android:ems="10"
         android:hint="@string/address11"
         android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ETCITY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/city1"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/RGGENDER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/RBMALE">
+
+        <RadioButton
+            android:id="@+id/RBMALE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/male1" />
+
+        <RadioButton
+            android:id="@+id/RBFEMALE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/female" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/BTNSAVE"

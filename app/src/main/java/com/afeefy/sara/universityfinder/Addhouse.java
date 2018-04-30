@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.afeefy.sara.universityfinder.Data.House;
@@ -18,7 +20,9 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Addhouse extends AppCompatActivity implements View.OnClickListener {
     private EditText ETNUMHOUSE;
     private EditText ETSUBJECT;
-    private EditText ETYEAR,ETSPACE,ETPHONENUMBER,ETADDRESS;
+    private EditText ETYEAR,ETSPACE,ETPHONENUMBER,ETADDRESS,ETCITY;
+    private RadioGroup RGGENDER;
+    private RadioButton RBMALE,RBFEMALE;
     private Button BTNSAVE;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,10 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
         ETSPACE = (EditText) findViewById(R.id.ETSPACE);
         ETPHONENUMBER = (EditText) findViewById(R.id.ETPHONENUMBER);
         ETADDRESS= (EditText) findViewById(R.id.ETADDRESS);
+        ETCITY= (EditText) findViewById(R.id.ETCITY);
+        RGGENDER= (RadioGroup) findViewById(R.id.RGGENDER);
+        RBMALE= (RadioButton) findViewById(R.id.RBMALE);
+        RBFEMALE= (RadioButton) findViewById(R.id.RBFEMALE);
         BTNSAVE = (Button) findViewById(R.id.BTNSAVE);
         BTNSAVE.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +55,12 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
         String STSPACE=ETSPACE.getText().toString();
         String STPHONENUMBER=ETPHONENUMBER.getText().toString();
         String STADDRESS=ETADDRESS.getText().toString();
+        String STCITY=ETCITY.getText().toString();
+
+
+
+
+
         //2. todo Validate fields input
         //isok=true;......
         //3. data manipulation
@@ -56,6 +70,19 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
         house.setNumberinhouse(STNUMHOUSE);
         house.setRoomspace(space);
         house.setCompleted(false);
+        house.setCity(STCITY);
+        house.setAddress(STADDRESS);
+        house.setPhonenumber(STPHONENUMBER);
+        house.setSubject(STSUBJECT);
+        house.setYearsubject(Integer.parseInt(STYEAR));
+
+        if (RBMALE.isChecked())
+        house.setGender("male");
+        else
+            house.setGender("female" );
+
+        //gps lat lang
+
         //5.to get user email
         FirebaseAuth auth=FirebaseAuth.getInstance();
         FirebaseUser user=auth.getCurrentUser();
@@ -66,13 +93,17 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
         //todo לקבלת קישור למסד הניתונים שלנו
         //todo קישור הינו לשורש של המסד שלנו
         reference= FirebaseDatabase.getInstance().getReference();
+        house.setEmail(email);
+        String key=reference.child("MyList").push().getKey();
+        house.setKeyId(key);
         //7.saving data on the firebase database
-        reference.child(email).child("MyList").push().setValue(house).addOnCompleteListener(this, new OnCompleteListener<Void>() {
+        reference.child("MyList").child(key).setValue(house).addOnCompleteListener(this, new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful())
                 {
                     Toast.makeText(Addhouse.this,"Add Product Succesful",Toast.LENGTH_SHORT);
+                    finish();;
                 }
                 else
                 {

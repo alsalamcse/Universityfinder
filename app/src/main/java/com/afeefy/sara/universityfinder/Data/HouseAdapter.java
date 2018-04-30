@@ -1,4 +1,4 @@
-package com.afeefy.sara.universityfinder;
+package com.afeefy.sara.universityfinder.Data;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,6 +10,8 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.afeefy.sara.universityfinder.Data.House;
+import com.afeefy.sara.universityfinder.R;
+
 /**
  * Created by user on 05/03/2018.
  */
@@ -37,11 +39,15 @@ import com.afeefy.sara.universityfinder.Data.House;
         TextView itmTvroomspace = (TextView) view.findViewById(R.id.tvroomspace);
         TextView itmTvphonenumber = (TextView) view.findViewById(R.id.tvphonenumber);
         TextView itmvaddress = (TextView) view.findViewById(R.id.tvaddress);
+        TextView itmvcity= (TextView) view.findViewById(R.id.tvcity);
+        TextView itmvgender= (TextView) view.findViewById(R.id.tvgender);
         House h = getItem(position);
         itmTvnumhouse.setText(h.getNumberinhouse() + "");
         itmTvroomspace.setText(h.getRoomspace() + "");
         itmTvphonenumber.setText(h.getPhonenumber() + "");
         itmvaddress.setText(h.getAddress() + "");
+        itmvcity.setText(h.getCity() + "");
+        itmvgender.setText(h.getGender() + "");
         return view;
     }
 }

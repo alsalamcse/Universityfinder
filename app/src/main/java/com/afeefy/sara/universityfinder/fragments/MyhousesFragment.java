@@ -1,15 +1,22 @@
-package com.afeefy.sara.universityfinder;
+package com.afeefy.sara.universityfinder.fragments;
+
+
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.TextView;
+
+import com.afeefy.sara.universityfinder.Addhouse;
 import com.afeefy.sara.universityfinder.Data.House;
 import com.afeefy.sara.universityfinder.Data.HouseAdapter;
+import com.afeefy.sara.universityfinder.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -18,41 +25,53 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Houses extends AppCompatActivity implements View.OnClickListener {
-    private ImageButton IMGADD;
-    private TextView ETNUMHOUSE;
-    private TextView ETSUBJECT;
-    private TextView ETYEAR, ETSPACE, ETPHONENUMBER,ETADDRESS,ETCITY,ETGENDER;
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class MyhousesFragment extends Fragment {
+    private ImageButton IBSEARCH;
     private ListView LVHOUSES;
+    private EditText ETSEARCH;
     private HouseAdapter houseAdapter;
-    private Button BTNSAVE;
     private FirebaseAuth auth;
     private FirebaseUser firebaseUser;
 
+    public MyhousesFragment() {
+        // Required empty public constructor
+    }
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_houses);
-        IMGADD = (ImageButton) findViewById(R.id.IMGADD);
-        LVHOUSES = (ListView) findViewById(R.id.LVHOUSES);
-
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+         View v=inflater.inflate(R.layout.fragment_myhouses, container, false);
+        IBSEARCH = (ImageButton) v.findViewById(R.id.IMGADD);
+        LVHOUSES = (ListView) v.findViewById(R.id.LVHOUSES);
+        ETSEARCH = (EditText) v.findViewById(R.id.ETSEARCH);
 
 
+        IBSEARCH.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                String st=ETSEARCH.getText().toString();
+                readAndListen(st);
+            }
+        });
 
 
 
-        BTNSAVE = (Button) findViewById(R.id.BTNSAVE);
-        houseAdapter = new HouseAdapter(this, R.layout.item_house);
+
+
+        houseAdapter = new HouseAdapter(getContext(), R.layout.item_house);
         LVHOUSES.setAdapter(houseAdapter);
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
-        readAndListen();
-
+        readAndListen("");
+        return v;
     }
-    private void readAndListen() {
+    private void readAndListen(String st) {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
         String email = user.getEmail();
@@ -76,26 +95,5 @@ public class Houses extends AppCompatActivity implements View.OnClickListener {
             }
         });
     }
-    @Override
-    public void onClick(View v)
-    {
-        if (IMGADD == v)
-        {
-            Intent i = new Intent(this, Addhouse.class);
-            startActivity(i);
-        }
-    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
