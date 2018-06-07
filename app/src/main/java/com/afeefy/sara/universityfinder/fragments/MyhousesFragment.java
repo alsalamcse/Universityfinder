@@ -46,10 +46,9 @@ public class MyhousesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
          View v=inflater.inflate(R.layout.fragment_myhouses, container, false);
-        IBSEARCH = (ImageButton) v.findViewById(R.id.IMGADD);
+        IBSEARCH = (ImageButton) v.findViewById(R.id.IBSEARCH);
         LVHOUSES = (ListView) v.findViewById(R.id.LVHOUSES);
         ETSEARCH = (EditText) v.findViewById(R.id.ETSEARCH);
-
 
         IBSEARCH.setOnClickListener(new View.OnClickListener() {
             @Override
