@@ -83,10 +83,10 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
             isok = false;
             ETSPACE.setError( "more than 5 and less than 40");
         }
-        if (STPHONENUMBER.() < 5 && STPHONENUMBER.length()>40)
+        if (STPHONENUMBER.length()< 10 && STPHONENUMBER.length()>10)
         {
             isok = false;
-            ETPHONENUMBER.setError( "more than 5 and less than 40");
+            ETPHONENUMBER.setError( "Exactly 10");
         }
         if (STADDRESS.length()>3)
         {
