@@ -24,6 +24,8 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
     private RadioGroup RGGENDER;
     private RadioButton RBMALE,RBFEMALE;
     private Button BTNSAVE;
+    private boolean isok;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +58,7 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
         String STPHONENUMBER=ETPHONENUMBER.getText().toString();
         String STADDRESS=ETADDRESS.getText().toString();
         String STCITY=ETCITY.getText().toString();
+        isok=true;
 
 
 
@@ -65,6 +68,39 @@ public class Addhouse extends AppCompatActivity implements View.OnClickListener 
         //isok=true;......
         //3. data manipulation
         double space=Double.parseDouble(STSPACE);
+        boolean isok=true;
+        if (STNUMHOUSE.length()>6&& STNUMHOUSE.length()<1) {
+            isok = false;
+            ETNUMHOUSE.setError("At least 1 room");
+        }
+        if (STYEAR.length() < 1 && STYEAR.length()>10)
+        {
+          isok = false;
+            ETYEAR.setError( "At least in year 1");
+        }
+        if (STSPACE.length() < 5 && STSPACE.length()>40)
+        {
+            isok = false;
+            ETSPACE.setError( "more than 5 and less than 40");
+        }
+        if (STPHONENUMBER.() < 5 && STPHONENUMBER.length()>40)
+        {
+            isok = false;
+            ETPHONENUMBER.setError( "more than 5 and less than 40");
+        }
+        if (STADDRESS.length()>3)
+        {
+            isok = false;
+            ETADDRESS.setError( "At least 3 letters");
+        }
+        if (STCITY.length() < 5 && STCITY.length()>40)
+        {
+            isok = false;
+            ETCITY.setError( "more than 5 and less than 40");
+        }
+
+
+
         //4. building data object
         House house=new House();
         house.setNumberinhouse(STNUMHOUSE);

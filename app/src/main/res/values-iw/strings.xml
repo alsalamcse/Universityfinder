@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Universityfinder</string>
+    <string name="Address">כתובת</string>
+    <string name="BTNEMAIL1">אימייל</string>
+    <string name="BTNLOGIN">כניסה</string>
+    <string name="BTNNAME1">שם</string>
+    <string name="BTNPASSWORD1">סיסמה</string>
+    <string name="BTNSAVE">שמור</string>
+    <string name="BTNSIGNUP">הרשמה</string>
+    <string name="ETEMAIL">אימייל</string>
+    <string name="ETNAME">שם</string>
+    <string name="ETPASSWORD">סיסמה</string>
+    <string name="Name">שם</string>
+    <string name="city1">עיר</string>
+    <string name="city2">עיר</string>
+    <string name="email">אימייל</string>
+    <string name="gender1">מין</string>
+    <string name="save">שמירה</string>
+    <string name="female">נקבה</string>
+    <string name="house">מספר חדרי הבית</string>
+    <string name="male1">זכר</string>
+    <string name="msa7a">שטח החדר</string>
+    <string name="msa7a1">שטח החדר</string>
+    <string name="phone">מספר הטלפון \"</string>
+    <string name="phonenum">"מספר הטלפון "</string>
+    <string name="phonenumber">"מספר הטלפון "</string>
+    <string name="search" translatable="false">חיפוש</string>
+    <string name="studyyeard1">שנת למידה</string>
+    <string name="subject">מקצוע</string>
+    <string name="title_activity_addhouse">הוספת בית</string>
+    <string name="title_activity_main">העמוד הראשון</string>
+    <string name="year">שנת למידה</string>
+    <string name="email1">אימייל</string>
+    <string name="title_activity_map" translatable="false"></string>
+</resources>

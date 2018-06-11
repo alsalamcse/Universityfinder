@@ -1,9 +1,8 @@
 package com.afeefy.sara.universityfinder.Data;
 
 /**
- * Created by user on 22/11/2017.
+ * מיהנייחעיח
  */
-
 public class House {
     private String numberinhouse;
     private Double roomspace;
@@ -18,11 +17,25 @@ public class House {
     private int yearsubject;
     private String Email;
     private String keyId;
-
-
     public House() {
     }
 
+    /**
+     *
+     * @param numberinhouse
+     * @param roomspace
+     * @param isCompleted
+     * @param phonenumber
+     * @param address
+     * @param city
+     * @param gender
+     * @param lat
+     * @param lung
+     * @param subject
+     * @param yearsubject
+     * @param email
+     * @param keyId
+     */
     public House(String numberinhouse, Double roomspace, boolean isCompleted, String phonenumber, String address, String city, String gender, Double lat, Double lung, String subject, int yearsubject, String email, String keyId) {
         this.numberinhouse = numberinhouse;
         this.roomspace = roomspace;
@@ -38,8 +51,6 @@ public class House {
         Email = email;
         this.keyId = keyId;
     }
-
-
     public String getNumberinhouse() {
         return numberinhouse;
     }

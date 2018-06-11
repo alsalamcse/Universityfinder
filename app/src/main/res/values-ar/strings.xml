@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Universityfinder</string>
+    <string name="Address">عنوان</string>
+    <string name="BTNEMAIL1">البريد الالكتروني</string>
+    <string name="BTNLOGIN">تسجيل دخول</string>
+    <string name="BTNNAME1">الاسم</string>
+    <string name="BTNPASSWORD1">كلمة السر</string>
+    <string name="BTNSAVE">خزن</string>
+    <string name="BTNSIGNUP">تسجيل حساب</string>
+    <string name="ETEMAIL">البريد الالكتروني</string>
+    <string name="ETNAME">الاسم</string>
+    <string name="ETPASSWORD">كسمة السر</string>
+    <string name="city1">المدينة</string>
+    <string name="city2">المدينة</string>
+    <string name="email">البريد الينورتكلا</string>
+    <string name="female">انثى</string>
+    <string name="save">خزن</string>
+    <string name="search" translatable="false">بحث</string>
+    <string name="studyyeard1">سنة التعليم</string>
+    <string name="subject">الموضوع</string>
+    <string name="title_activity_addhouse">اضافة المنزل</string>
+    <string name="title_activity_main">الصفحة الرئيسية</string>
+    <string name="year">سنة التعليم</string>
+    <string name="Name">الاسم</string>
+    <string name="gender1">الجنس</string>
+    <string name="house">عدد غرف المنزل</string>
+    <string name="email1">البريد الكترونيا</string>
+    <string name="male1">ذكر</string>
+    <string name="msa7a">مساحة الغرفة</string>
+    <string name="msa7a1">مساحة الغرفة</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="phonenum">رقم الهاتف</string>
+    <string name="phonenumber">رقم الهاتف</string>
+</resources>

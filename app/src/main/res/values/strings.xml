@@ -1,40 +1,39 @@
 <resources>
-    <string name="app_name">Universityfinder</string>
-    <string name="Name" />
+    <string name="Name" >name</string>
     <string name="ETNAME">Name</string>
     <string name="ETEMAIL">Email</string>
     <string name="ETPASSWORD">Password</string>
     <string name="BTNLOGIN">Login</string>
     <string name="BTNSIGNUP">Signup</string>
-    <string name="BTNFORGET">Forget my password</string>
+    <string name="BTNFORGET" translatable="false">Forget my password</string>
     <string name="BTNNAME1">Name</string>
     <string name="BTNEMAIL1">Email</string>
     <string name="BTNPASSWORD1">Password</string>
-    <string name="ETREPASSWORD">Re</string>
-    <string name="ETREPASSWORD1">Re.Password</string>
+    <string name="ETREPASSWORD" translatable="false">Re</string>
+    <string name="ETREPASSWORD1" translatable="false">Re.Password</string>
     <string name="BTNSAVE">SAVE</string>
-    <string name="bagrut">Bagrut average</string>
-    <string name="Psycchometric">Psychometric sign</string>
-    <string name="check">Check</string>
-    <string name="check1">Check Colleges</string>
-    <string name="check2">Check Universitys</string>
-    <string name="check3">Check Universities</string>
+    <string name="bagrut" translatable="false">Bagrut average</string>
+    <string name="Psycchometric" translatable="false">Psychometric sign</string>
+    <string name="check" translatable="false">Check</string>
+    <string name="check1" translatable="false">Check Colleges</string>
+    <string name="check2" translatable="false">Check Universitys</string>
+    <string name="check3" translatable="false">Check Universities</string>
     <string name="email">Email</string>
-    <string name="code">Send Code</string>
+    <string name="code" translatable="false">Send Code</string>
     <string name="email1">Email</string>
     <string name="title_activity_addhouse">Addhouse</string>
     <string name="house">Number in a House</string>
-    <string name="msa7a" />
+    <string name="msa7a" >roomspace</string>
     <string name="msa7a1">room space</string>
     <string name="subject">SUBJECT</string>
     <string name="studyyeard1">Study Year</string>
     <string name="save">Save</string>
-    <string name="skip">Skip</string>
-    <string name="phonenumber" />
+    <string name="skip" translatable="false">Skip</string>
+    <string name="phonenumber" >phone number</string>
     <string name="phonenum">Phone number</string>
-    <string name="Address" />
-    <string name="address11">Adress</string>
-    <string name="title_activity_map">Map</string>
+    <string name="Address" >Address</string>
+    <string name="address11" translatable="false">Adress</string>
+    <string name="title_activity_map" translatable="false">Map</string>
     <string name="year">Year Subject</string>
     <string name="phone">Phone Number</string>
     <string name="city1">City</string>
@@ -43,10 +42,11 @@
     <string name="male1">Male</string>
     <string name="female">Female</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="section_format" translatable="false">Hello World from section: %1$d</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="search">Search</string>
+    <string name="app_name">Universityfinder</string>
 </resources>
